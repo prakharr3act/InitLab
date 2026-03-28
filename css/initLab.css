@@ -1,7 +1,7 @@
-/* *{
+*{
   margin: 0;
   padding: 0;
-} */
+} 
 
 #initLabsLogo{
   height: 70px;
@@ -15,4 +15,22 @@
 .topNav  {
  display: flex;
  justify-content: space-between;
+}
+
+.topNav a{
+text-decoration: none;
+}
+
+.bottomNav a{
+text-decoration: none;
+}
+
+.bottomNav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+nav{
+  background-color: #0D1117;;
+   color: white;
 }

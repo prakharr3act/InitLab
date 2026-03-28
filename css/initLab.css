@@ -31,6 +31,10 @@ text-decoration: none;
 }
 
 nav{
-  background-color: #0D1117;;
-   color: white;
+  background-color:  #22272e;
 }
+
+nav a {
+  color: white;
+}
+

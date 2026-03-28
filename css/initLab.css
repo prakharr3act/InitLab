@@ -7,11 +7,10 @@
   height: 70px;
 }
 
-.topNav .navTopLeft ul li{
-  list-style: none;
-  display: inline-block;
+.navTopLeft {
+  display: flex;
+  gap: 20px;           
 }
-
 .topNav  {
  display: flex;
  justify-content: space-between;
@@ -52,4 +51,8 @@ nav a {
    padding: 10px 20px;
   border-radius: 6px;
   color: white;
+}
+
+#navTopLeft{
+  display: flex;
 }

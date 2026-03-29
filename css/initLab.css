@@ -11,12 +11,13 @@ body{
 
 
 nav{
-  background-color:  #22272e;
+  background-color:  #000000;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav a {
   color: white;
+  font-size: 18px;
 }
 
 /* Top Navigation Bar, it has both top left and top right nav*/
@@ -42,6 +43,7 @@ text-decoration: none;
   max-height: fit-content;
   padding: 0;
 
+
 }
 
 .navTopLeft {
@@ -58,6 +60,8 @@ text-decoration: none;
 #navTopLeft{
   display: flex;
 }
+
+
 
 /* Top Right Navigation Bar*/
 
@@ -82,7 +86,7 @@ text-decoration: none;
 /* Bottom Nav Bar*/
 
 .bottomNav{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.094);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.205);
 }
 
 .bottomNav a{
@@ -106,5 +110,5 @@ text-decoration: none;
 
 
 .aboutInfoo{
-  background-color: #22272e;
+  background-color: #000000;
 }

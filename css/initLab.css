@@ -57,10 +57,9 @@ text-decoration: none;
 }
 
 
-#navTopLeft{
+.navTopLeft{
   display: flex;
 }
-
 
 
 /* Top Right Navigation Bar*/
@@ -108,6 +107,8 @@ text-decoration: none;
 }
 
 
+
+/*about */
 
 .aboutInfoo{
   background-color: #000000;

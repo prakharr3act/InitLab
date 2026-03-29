@@ -3,6 +3,20 @@
   padding: 0;
 } 
 
+/* Navigation Bar*/
+
+
+nav{
+  background-color:  #22272e;
+}
+
+nav a {
+  color: white;
+}
+
+
+/* Top Left Navigation Bar */
+
 #initLabsLogo{
   height: 70px;
 }
@@ -11,14 +25,24 @@
   display: flex;
   gap: 20px;           
 }
+
+
+.topNav a{
+text-decoration: none;
+}
+
+
 .topNav  {
  display: flex;
  justify-content: space-between;
 }
 
-.topNav a{
-text-decoration: none;
+
+#navTopLeft{
+  display: flex;
 }
+
+/* Top Right Navigation Bar*/
 
 .bottomNav a{
 text-decoration: none;
@@ -29,14 +53,6 @@ text-decoration: none;
   display: inline-block;
 }
 
-nav{
-  background-color:  #22272e;
-   font-weight: 400;
-}
-
-nav a {
-  color: white;
-}
 
 #tryInitLabs{
   padding: 10px 25px;
@@ -50,8 +66,4 @@ nav a {
    padding: 10px 20px;
   border-radius: 6px;
   color: white;
-}
-
-#navTopLeft{
-  display: flex;
 }

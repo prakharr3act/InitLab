@@ -14,18 +14,7 @@ nav a {
   color: white;
 }
 
-
-/* Top Left Navigation Bar */
-
-#initLabsLogo{
-  height: 70px;
-}
-
-.navTopLeft {
-  display: flex;
-  gap: 20px;           
-}
-
+/* Top Navigation Bar*/
 
 .topNav a{
 text-decoration: none;
@@ -35,6 +24,25 @@ text-decoration: none;
 .topNav  {
  display: flex;
  justify-content: space-between;
+}
+
+
+
+
+/* Top Left Navigation Bar */
+
+#initLabsLogo{
+  height: 70px;
+}
+
+.navTopLeft {
+  display: flex;
+  gap: 20px;      
+}
+
+.navTopLeft ul li{
+  display: inline-block;
+  padding:25px 20px;
 }
 
 
@@ -49,6 +57,7 @@ text-decoration: none;
   padding: 10px 25px;
   border-radius: 6px;
   border: none;
+  margin: 20px 20px;
 }
 
 #seeWhatNew{
@@ -57,6 +66,7 @@ text-decoration: none;
    padding: 10px 20px;
   border-radius: 6px;
   color: white;
+   margin: 20px 80px 25px 20px;
 }
 
 

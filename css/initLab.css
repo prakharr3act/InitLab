@@ -44,15 +44,6 @@ text-decoration: none;
 
 /* Top Right Navigation Bar*/
 
-.bottomNav a{
-text-decoration: none;
-}
-
-.bottomNav ul li{
-  list-style: none;
-  display: inline-block;
-}
-
 
 #tryInitLabs{
   padding: 10px 25px;
@@ -67,3 +58,17 @@ text-decoration: none;
   border-radius: 6px;
   color: white;
 }
+
+
+/* Bottom Nav Bar*/
+
+.bottomNav a{
+text-decoration: none;
+}
+
+.bottomNav ul li{
+  list-style: none;
+  display: inline-block;
+}
+
+

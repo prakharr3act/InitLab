@@ -33,6 +33,9 @@ text-decoration: none;
  justify-content: space-between;
 }
 
+.topNav div{
+  height: 70px;
+}
 
 .navTopLeft a {
   position: relative;
@@ -97,12 +100,17 @@ text-decoration: none;
 
 
 #tryInitLabs{
-  padding: 10px 25px;
+  padding: 10px 40px;
   border-radius: 6px;
   border: none;
   margin: 20px -10px;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+#tryInitLabs:hover{
+  opacity:.97;
+}
 #seeWhatNew{
   border: 2px solid white;
   background-color: transparent;
@@ -110,8 +118,13 @@ text-decoration: none;
   border-radius: 6px;
   color: white;
    margin: 20px 80px 25px 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 18px;
 }
 
+#seeWhatNew:hover{
+  background-color: rgba(255, 255, 255, 0.174);
+}
 
 /* Bottom Nav Bar*/
 

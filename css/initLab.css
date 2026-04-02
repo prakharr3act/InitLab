@@ -1,3 +1,120 @@
+/* Subnav styles */
+.subnav {
+  width: 100%;
+  background: var(--card);
+  border-bottom: 1.5px solid var(--border);
+  position: sticky;
+  top: 64px;
+  z-index: 99;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(60,60,100,0.03);
+}
+.subnav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+  padding: 0 6vw;
+  list-style: none;
+}
+.subnav ul li {
+  position: relative;
+}
+.subnav ul > li > a {
+  display: block;
+  padding: 18px 22px 14px 22px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.85;
+  transition: background 0.2s, color 0.2s;
+}
+.subnav ul > li > a:hover, .subnav ul > li > a:focus {
+  background: var(--blue);
+  color: #fff;
+  opacity: 1;
+}
+.subnav .dropdown:hover > .dropdown-content, .subnav .dropdown:focus-within > .dropdown-content {
+  display: block;
+}
+.subnav .dropdown-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 220px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 8px 24px rgba(60,60,100,0.10);
+  z-index: 100;
+}
+.subnav .dropdown-content li a {
+  padding: 14px 22px;
+  color: var(--text);
+  display: block;
+  font-weight: 500;
+  opacity: 0.85;
+  background: none;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.subnav .dropdown-content li:last-child a {
+  border-bottom: none;
+}
+.subnav .dropdown-content li a:hover, .subnav .dropdown-content li a:focus {
+  background: var(--blue);
+  color: #fff;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .subnav ul {
+    flex-direction: column;
+    padding: 0 2vw;
+  }
+  .subnav ul > li > a {
+    padding: 14px 12px 12px 12px;
+  }
+  .subnav .dropdown-content {
+    min-width: 100%;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* Blog card image */
+.blog-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Footer menu grid for many links */
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  max-width: 420px;
+}
+.footer-menu a {
+  flex: 1 1 160px;
+  min-width: 120px;
+}
+
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer-menu {
+    max-width: 100%;
+    gap: 10px 16px;
+  }
+}
 html{font-size:75%}
 
 :root{

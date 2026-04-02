@@ -100,9 +100,23 @@
   gap: 12px 32px;
   max-width: 420px;
 }
+
+/* Improved GitHub-like footer link styles */
 .footer-menu a {
-  flex: 1 1 160px;
-  min-width: 120px;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1.04rem;
+  color: var(--text);
+  opacity: 0.85;
+  text-decoration: none;
+  width: fit-content;
+  user-select: none;
+  padding: 2px 0;
+  transition: opacity 0.2s;
+}
+.footer-menu a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
@@ -451,28 +465,18 @@ gap:70px
 footer h2{font-size:2.8rem}
 footer p{margin-top:22px;font-size:1.2rem;color:var(--muted)}
 
-.footer-menu a{
-display:block;
-margin-bottom:14px;
-font-size:1.05rem;
-color:var(--text);
-opacity:.8;
-text-decoration:none;
-width:fit-content;
-user-select:none
-}
-
-.footer-menu a:hover{opacity:1}
-
 .footer-bottom{
-margin-top:90px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-gap:20px;
-font-size:1.1rem;
-color:var(--muted)
+margin-top: 36px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 12px;
+font-size: 1.04rem;
+color: var(--muted);
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .index-hero{

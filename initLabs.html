@@ -28,6 +28,32 @@
   </div>
   <div class="hamburger" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
 </nav>
+<nav class="subnav">
+  <ul>
+    <li><a href="pages/blog/welcome.html">Blog Home</a></li>
+    <li class="dropdown">
+      <a href="#">Categories <i class="fa fa-caret-down"></i></a>
+      <ul class="dropdown-content">
+        <li><a href="pages/blog/cybersecurity.html">Cybersecurity</a></li>
+        <li><a href="pages/blog/game-studio.html">Game Studio</a></li>
+        <li><a href="#">Web Tools</a></li>
+        <li><a href="#">Extensions</a></li>
+        <li><a href="#">Media Tools</a></li>
+        <li><a href="#">Scripting</a></li>
+        <li><a href="#">Productivity</a></li>
+        <li><a href="#">Dev Stories</a></li>
+        <li><a href="#">All Posts</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Docs</a></li>
+    <li><a href="#">API</a></li>
+    <li><a href="#">Releases</a></li>
+    <li><a href="#">Community</a></li>
+    <li><a href="#">Support</a></li>
+    <li><a href="#">Changelog</a></li>
+    <li><a href="#">More</a></li>
+  </ul>
+</nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html">Home</a>
   <a href="pages/about.html">About</a>
@@ -35,13 +61,15 @@
   <a href="pages/contact.html">Contact</a>
   <a href="pages/certifications.html">Certifications</a>
   <a href="pages/gallery.html">Gallery</a>
+  <a href="pages/blog/welcome.html">Blog</a>
 </div>
 
 <main>
   <section class="hero">
     <div class="hero-content">
       <h1>InitLabs</h1>
-      <p class="hero-lead">InitLabs is a service provider delivering cutting-edge <b>web tools</b>, <b>browser extensions</b>, <b>cybersecurity solutions</b>, <b>scripting tools</b>, <b>game studio</b> services, <b>media tools</b>, and more.</p>
+      <img src="https://placehold.co/1200x350/0070f3/fff?text=InitLabs+Service+Provider" alt="InitLabs Hero" style="width:100%;max-width:900px;border-radius:18px;margin:32px auto 24px auto;display:block;">
+      <p class="hero-lead">InitLabs is your trusted partner for <b>web tools</b>, <b>browser extensions</b>, <b>cybersecurity solutions</b>, <b>scripting tools</b>, <b>game development</b>, <b>media tools</b>, and more. We empower creators, developers, and businesses with innovative, secure, and user-friendly digital solutions. <br><br>Explore our blog, docs, and tools to see how InitLabs can help you build, secure, and create for the future.</p>
       <a href="#services" class="cta-btn">Explore Our Services</a>
     </div>
   </section>
@@ -86,18 +114,39 @@
     <h2>Latest from the Blog</h2>
     <div class="blog-cards">
       <div class="blog-card">
+        <img src="https://placehold.co/400x180/222/fff?text=Welcome" alt="Welcome" style="width:100%;border-radius:8px;margin-bottom:12px;">
         <h4>Welcome to InitLabs!</h4>
         <p>Discover our journey, mission, and the tools we build for the future.</p>
-        <a href="#" class="read-more">Read More</a>
+        <a href="pages/blog/welcome.html" class="read-more">Read More</a>
       </div>
       <div class="blog-card">
+        <img src="https://placehold.co/400x180/0070f3/fff?text=Cybersecurity" alt="Cybersecurity" style="width:100%;border-radius:8px;margin-bottom:12px;">
         <h4>How We Secure Your Web</h4>
         <p>Learn about our approach to cybersecurity and privacy-first development.</p>
+        <a href="pages/blog/cybersecurity.html" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="https://placehold.co/400x180/333/fff?text=Game+Studio" alt="Game Studio" style="width:100%;border-radius:8px;margin-bottom:12px;">
+        <h4>Game Studio: Behind the Scenes</h4>
+        <p>Peek into our creative process for building games and interactive media.</p>
+        <a href="pages/blog/game-studio.html" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="https://placehold.co/400x180/888/fff?text=Web+Tools" alt="Web Tools" style="width:100%;border-radius:8px;margin-bottom:12px;">
+        <h4>Top 10 Web Tools in 2026</h4>
+        <p>Our favorite web tools for productivity, creativity, and security this year.</p>
         <a href="#" class="read-more">Read More</a>
       </div>
       <div class="blog-card">
-        <h4>Game Studio: Behind the Scenes</h4>
-        <p>Peek into our creative process for building games and interactive media.</p>
+        <img src="https://placehold.co/400x180/555/fff?text=Extensions" alt="Extensions" style="width:100%;border-radius:8px;margin-bottom:12px;">
+        <h4>Must-Have Browser Extensions</h4>
+        <p>Boost your workflow with these essential browser add-ons from InitLabs.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-card">
+        <img src="https://placehold.co/400x180/444/fff?text=Media+Tools" alt="Media Tools" style="width:100%;border-radius:8px;margin-bottom:12px;">
+        <h4>Media Tools for Creators</h4>
+        <p>Explore our suite of media tools for editing, publishing, and sharing content.</p>
         <a href="#" class="read-more">Read More</a>
       </div>
     </div>
@@ -108,7 +157,7 @@
   <div class="footer-top">
     <div>
       <h2>Always Building.</h2>
-      <p>InitLabs documents growth, systems, and ideas — not just for business, but for innovation.</p>
+      <p>InitLabs documents growth, systems, and ideas — not just for business, but for innovation. Explore our tools, docs, and community resources below.</p>
     </div>
     <div class="footer-menu">
       <a href="pages/about.html">About</a>
@@ -116,10 +165,60 @@
       <a href="pages/contact.html">Contact</a>
       <a href="pages/certifications.html">Certifications</a>
       <a href="pages/gallery.html">Gallery</a>
+      <a href="#">Docs</a>
+      <a href="#">API Reference</a>
+      <a href="#">Web Tools</a>
+      <a href="#">Extensions</a>
+      <a href="#">Cybersecurity</a>
+      <a href="#">Scripting</a>
+      <a href="#">Game Studio</a>
+      <a href="#">Media Tools</a>
+      <a href="#">Productivity</a>
+      <a href="#">Dev Stories</a>
+      <a href="#">Blog</a>
+      <a href="#">Changelog</a>
+      <a href="#">Releases</a>
+      <a href="#">Community</a>
+      <a href="#">Support</a>
+      <a href="#">Careers</a>
+      <a href="#">Partners</a>
+      <a href="#">Integrations</a>
+      <a href="#">Security</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Open Source</a>
+      <a href="#">Contribute</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Events</a>
+      <a href="#">Press</a>
+      <a href="#">Brand Assets</a>
+      <a href="#">Sitemap</a>
     </div>
     <div class="footer-menu">
       <a href="https://github.com/prakharr3act" target="_blank">GitHub</a>
       <a href="https://www.instagram.com/prakharr._patel/" target="_blank">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter/X</a>
+      <a href="#">YouTube</a>
+      <a href="#">Reddit</a>
+      <a href="#">Pinterest</a>
+      <a href="#">Discord</a>
+      <a href="#">Slack</a>
+      <a href="#">Telegram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Google Dev</a>
+      <a href="#">Medium</a>
+      <a href="#">Hashnode</a>
+      <a href="#">Dev.to</a>
+      <a href="#">Stack Overflow</a>
+      <a href="#">Product Hunt</a>
+      <a href="#">AngelList</a>
+      <a href="#">Figma</a>
+      <a href="#">Behance</a>
+      <a href="#">Dribbble</a>
+      <a href="#">CodePen</a>
+      <a href="#">Sponsorships</a>
+      <a href="#">Contact Team</a>
     </div>
   </div>
   <div class="footer-bottom">

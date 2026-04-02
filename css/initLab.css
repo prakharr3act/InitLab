@@ -30,7 +30,7 @@
   transition: background 0.2s, color 0.2s;
 }
 .subnav ul > li > a:hover, .subnav ul > li > a:focus {
-  background: var(--blue);
+  background: var(--accent);
   color: #fff;
   opacity: 1;
 }
@@ -64,7 +64,7 @@
   border-bottom: none;
 }
 .subnav .dropdown-content li a:hover, .subnav .dropdown-content li a:focus {
-  background: var(--blue);
+  background: var(--accent);
   color: #fff;
   opacity: 1;
 }
@@ -152,13 +152,14 @@ main {
 }
 
 .hero {
-  background: linear-gradient(90deg, var(--blue) 0%, var(--purple) 100%);
-  color: #fff;
+  background: var(--card);
+  color: var(--text);
   padding: 70px 0 60px 0;
-  border-radius: 18px;
+  border-radius: 12px;
   margin-bottom: 48px;
-  box-shadow: 0 4px 32px rgba(60,60,100,0.08);
+  box-shadow: 0 2px 8px rgba(140,149,159,0.08);
   text-align: center;
+  border: 1px solid var(--border);
 }
 .hero-content h1 {
   font-size: 3.2rem;
@@ -176,19 +177,21 @@ main {
 }
 .cta-btn {
   display: inline-block;
-  background: #fff;
-  color: var(--blue);
-  font-weight: 700;
-  padding: 12px 32px;
-  border-radius: 8px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 6px;
   text-decoration: none;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(60,60,100,0.08);
-  transition: background .2s, color .2s;
+  font-size: 1.05rem;
+  box-shadow: 0 1px 4px rgba(140,149,159,0.06);
+  border: 1px solid var(--border);
+  transition: background .2s, color .2s, border .2s;
 }
 .cta-btn:hover {
-  background: var(--blue);
+  background: var(--accent);
   color: #fff;
+  border: 1px solid var(--accent);
 }
 
 .services {
@@ -217,12 +220,12 @@ main {
   transition: box-shadow .2s, border .2s;
 }
 .service-card:hover {
-  box-shadow: 0 6px 24px rgba(60,60,100,0.10);
-  border: 1.5px solid var(--blue);
+  box-shadow: 0 6px 24px rgba(140,149,159,0.10);
+  border: 1.5px solid var(--accent);
 }
 .service-card i {
   font-size: 2.2rem;
-  color: var(--blue);
+  color: var(--accent);
   margin-bottom: 16px;
 }
 .service-card h3 {
@@ -274,7 +277,7 @@ main {
   margin-bottom: 16px;
 }
 .read-more {
-  color: var(--blue);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -282,7 +285,7 @@ main {
   transition: color .2s;
 }
 .read-more:hover {
-  color: var(--purple);
+  color: var(--accent-dark);
 }
 
 @media (max-width: 900px) {
@@ -321,7 +324,7 @@ left:0;
 bottom:-3px;
 width:0%;
 height:1.5px;
-background:var(--blue);
+background:var(--accent);
 transition:width .3s ease
 }
 
@@ -366,7 +369,7 @@ gap:30px;
 transform:translateY(-100%);
 transition:.6s cubic-bezier(.16,1,.3,1);
 z-index:99;
-border-bottom:5px solid var(--blue)
+border-bottom:5px solid var(--accent)
 }
 
 .mobile-menu.active{transform:translateY(0)}

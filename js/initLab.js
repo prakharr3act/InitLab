@@ -45,24 +45,58 @@ if (menuBtn && mobileMenu) {
   });
 }
 
-// Subnav dropdowns
-document.querySelectorAll('.subnav .dropdown').forEach(function(drop) {
+// Regular Subnav dropdowns (non-mega)
+document.querySelectorAll('.subnav .dropdown:not(.mega-dropdown)').forEach(function(drop) {
   drop.addEventListener('mouseenter', function() {
-    this.querySelector('.dropdown-content').style.display = 'block';
+    const content = this.querySelector('.dropdown-content');
+    if (content) content.style.display = 'block';
   });
   drop.addEventListener('mouseleave', function() {
-    this.querySelector('.dropdown-content').style.display = 'none';
+    const content = this.querySelector('.dropdown-content');
+    if (content) content.style.display = 'none';
   });
   
   // Keyboard accessibility
-  drop.querySelector('a').addEventListener('focus', function() {
-    drop.querySelector('.dropdown-content').style.display = 'block';
-  });
-  drop.querySelector('a').addEventListener('blur', function() {
-    setTimeout(() => {
-      drop.querySelector('.dropdown-content').style.display = 'none';
-    }, 200);
-  });
+  const link = drop.querySelector('a');
+  if (link) {
+    link.addEventListener('focus', function() {
+      const content = drop.querySelector('.dropdown-content');
+      if (content) content.style.display = 'block';
+    });
+    link.addEventListener('blur', function() {
+      setTimeout(() => {
+        const content = drop.querySelector('.dropdown-content');
+        if (content) content.style.display = 'none';
+      }, 200);
+    });
+  }
+});
+
+// Mega Subnav dropdowns
+document.querySelectorAll('.subnav .mega-dropdown').forEach(function(drop) {
+  const link = drop.querySelector('a');
+  const content = drop.querySelector('.mega-dropdown-content');
+  
+  if (link && content) {
+    drop.addEventListener('mouseenter', function() {
+      content.style.display = 'grid';
+    });
+    drop.addEventListener('mouseleave', function() {
+      content.style.display = 'none';
+    });
+    
+    // Keyboard accessibility
+    link.addEventListener('focus', function() {
+      content.style.display = 'grid';
+    });
+    link.addEventListener('blur', function() {
+      setTimeout(() => {
+        if (!drop.matches(':hover')) {
+          content.style.display = 'none';
+        }
+      }, 200);
+    });
+  }
 });
 
 // Live time (if time element exists)
